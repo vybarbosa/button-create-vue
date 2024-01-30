@@ -1,5 +1,12 @@
 # button-create
 
+This project aims to create a button by filling out a form, and also shows the css code
+
+## Project images
+
+![Button-create](./src/assets/buttoncreate.png)
+![button-form](./src/assets/button-form.png)
+
 ## Project setup
 ```
 npm install
