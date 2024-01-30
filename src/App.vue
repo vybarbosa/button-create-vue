@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Button-Create</h1>
+  <div class="container">
+    <inputCreator />
+    <buttonCreator />
+  </div> 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import buttonCreator from './components/buttonCreator.vue';
+import inputCreator from './components/inputCreator.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    buttonCreator,
+    inputCreator
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background: rgb(37, 71, 36);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
+  color: rgb(131, 128, 128);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  
 }
 </style>
